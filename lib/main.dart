@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -78,258 +79,259 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 55, 225, 254),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 450,
-                height: 80,
-                decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 33, 231, 39),
-                  borderRadius: BorderRadius.circular(20),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            width: 450,
+            height: 80,
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 91, 95, 104),
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Row(
+              // mainAxisAlignment: MainAxisAlignment.start,
+              // crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const SizedBox(
+                  width: 30,
                 ),
-                child: Row(
-                  // mainAxisAlignment: MainAxisAlignment.start,
-                  // crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const SizedBox(
-                      width: 30,
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 10, 163, 94),
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.all(3.0),
+                    child: Icon(
+                      Icons.check,
+                      color: Colors.white,
+                      size: 30,
                     ),
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 37, 71, 38),
-                        borderRadius: BorderRadius.circular(50),
+                  ),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                Text(
+                  'Surveys',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Color.fromARGB(255, 255, 254, 254),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Padding(padding: EdgeInsets.all(4.0)),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+              width: 450,
+              height: 80,
+              decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 91, 95, 104),
+                  borderRadius: BorderRadius.circular(20)),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 10, 163, 94),
+                        borderRadius: BorderRadius.circular(50)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(3.0),
+                      child: Icon(
+                        Icons.check,
+                        color: Colors.white,
+                        size: 30,
                       ),
-                      child: const Padding(
-                        padding: EdgeInsets.all(3.0),
-                        child: Icon(
-                          Icons.check,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                      ),
                     ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Text(
-                      'Surveys',
-                      style: TextStyle(
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Text(
+                    'Daily Surveys',
+                    style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
-                        color: const Color.fromARGB(255, 43, 43, 43),
-                      ),
-                    ),
-                  ],
+                        color: Colors.white),
+                  )
+                ],
+              )),
+          const Padding(padding: EdgeInsets.all(4.0)),
+          Container(
+            width: 450,
+            height: 80,
+            decoration: BoxDecoration(
+                color: Color.fromARGB(255, 91, 95, 104),
+                borderRadius: BorderRadius.circular(20)),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 30,
                 ),
-              ),
-              // Padding(padding: EdgeInsets.all(4.0)),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                  width: 450,
-                  height: 80,
+                Container(
+                  width: 40,
+                  height: 40,
                   decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 33, 231, 39),
-                      borderRadius: BorderRadius.circular(20)),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Container(
-                        width: 40,
-                        height: 40,
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 37, 71, 38),
-                            borderRadius: BorderRadius.circular(50)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(3.0),
-                          child: Icon(
-                            Icons.check,
-                            color: Colors.white,
-                            size: 30,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Text(
-                        'Daily Surveys',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20,
-                            color: Colors.white),
-                      )
-                    ],
-                  )),
-              Padding(padding: EdgeInsets.all(4.0)),
-              Container(
-                width: 450,
-                height: 80,
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 33, 231, 39),
-                    borderRadius: BorderRadius.circular(20)),
-                child: Row(
-                  children: [
-                    SizedBox(
-                      width: 30,
+                    borderRadius: BorderRadius.circular(50),
+                    color: Color.fromARGB(255, 10, 163, 94),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(3.0),
+                    child: Icon(
+                      Icons.check,
+                      color: Colors.white,
+                      size: 30,
                     ),
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Color.fromARGB(255, 37, 71, 38)),
-                      child: Padding(
-                        padding: const EdgeInsets.all(3.0),
-                        child: Icon(
-                          Icons.check,
-                          color: Colors.white,
-                          size: 30,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Text(
-                      "Zapper's Rewards",
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    )
-                  ],
+                  ),
                 ),
-              ),
-              Padding(padding: EdgeInsets.all(4.0)),
-              Container(
-                width: 450,
-                height: 80,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: const Color.fromARGB(255, 33, 231, 39)),
-                child: Row(
-                  children: [
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Color.fromARGB(255, 37, 71, 38)),
-                      child: Icon(
-                        Icons.check,
-                        color: Colors.white,
-                        size: 30,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Text(
-                      'Referrals',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
-                    )
-                  ],
+                SizedBox(
+                  width: 30,
                 ),
-              ),
-              Padding(padding: EdgeInsets.all(4.0)),
-              Container(
-                width: 450,
-                height: 80,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: const Color.fromARGB(255, 33, 231, 39),
-                ),
-                child: Row(
-                  children: [
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Color.fromARGB(255, 37, 71, 38)),
-                      child: Icon(
-                        Icons.check,
-                        color: Colors.white,
-                        size: 30,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Text(
-                      'Daily Check-in',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
-                    )
-                  ],
-                ),
-              ),
-              Center(
-                child: Text(
-                  'These are all ways you can earn in Zap Surveys!',
+                Text(
+                  "Zapper's Rewards",
                   style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 20,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(10)),
-              Container(
-                width: 450,
-                height: 80,
-                decoration: BoxDecoration(color: Colors.white),
-                child: Center(
-                  child: RichText(
-                    text: TextSpan(
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        color: Colors.black,
-                      ),
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'Our ',
-                        ),
-                        TextSpan(
-                          text: '#1 tip',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        TextSpan(
-                          text:
-                              ' for new Zappers is to make sure to at least complete your Daily Survey every day to maximize earnings.',
-                        ),
-                      ],
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              )
-            ],
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
           ),
+          Padding(padding: EdgeInsets.all(4.0)),
+          Container(
+            width: 450,
+            height: 80,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Color.fromARGB(255, 91, 95, 104)),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Color.fromARGB(255, 10, 163, 94),
+                  ),
+                  child: Icon(
+                    Icons.check,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                Text(
+                  'Referrals',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          ),
+          Padding(padding: EdgeInsets.all(4.0)),
+          Container(
+            width: 450,
+            height: 80,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Color.fromARGB(255, 91, 95, 104)),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Color.fromARGB(255, 10, 163, 94),
+                  ),
+                  child: Icon(
+                    Icons.check,
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    size: 30,
+                  ),
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                Text(
+                  'Daily Check-in',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          ),
+          Center(
+            child: Text(
+              'These are all ways you can earn in Zap Surveys!',
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 20,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          Padding(padding: EdgeInsets.all(10)),
+          Container(
+            width: 450,
+            height: 80,
+            decoration: BoxDecoration(color: Colors.white),
+            child: Center(
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    color: Colors.black,
+                  ),
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: 'Our ',
+                    ),
+                    TextSpan(
+                      text: '#1 tip',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    TextSpan(
+                      text:
+                          ' for new Zappers is to make sure to at least complete your Daily Survey every day to maximize earnings.',
+                    ),
+                  ],
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          )
+        ],
+      ),
 
-          // This trailing comma makes auto-formatting nicer for build methods.
-        ));
+      // This trailing comma makes auto-formatting nicer for build methods.
+    ));
   }
 }
